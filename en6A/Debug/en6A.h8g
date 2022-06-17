@@ -1,0 +1,4 @@
+-cpu=300HN
+-output="C:\WorkSpace\en6A\en6A\Debug\en6A.lib"
+-head=runtime,new,stdio,stdlib
+-lang=c
