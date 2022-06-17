@@ -21,7 +21,7 @@ void initFan(void)
 	TV.TCORB=g_fanLevel;
 	
     TV.TCRV0.BIT.CMIEA = 1;
-	TW.TMRW.BIT.CTS=1;
+
 }
 
 void setFanLevel(unsigned int level)
@@ -39,7 +39,7 @@ unsigned int getFanLevel(void)
 #pragma section IntPRG
 __interrupt(vect=22) void INT_TimerV(void) 
 {
-	if(TV.TCSRV.BIT.CMFA == 0){
+	if(TV.TCSRV.BIT.CMFA == 1){
     	TV.TCSRV.BIT.CMFA = 0;
  		
 		TV.TCORA=g_fanPeriod;

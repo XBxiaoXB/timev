@@ -7,19 +7,9 @@
 [GENERAL_DATA]
 [BREAKPOINTS]
 [OPEN_WORKSPACE_FILES]
-"C:\WorkSpace\en6A\en6A\ad.c" 
-"C:\WorkSpace\en6A\en6A\en6A.c" 
-"C:\WorkSpace\en6A\en6A\fan.c" 
-"C:\WorkSpace\en6A\en6A\intprg.c" 
-"C:\WorkSpace\en6A\en6A\iodefine.h" 
-"C:\WorkSpace\en6A\en6A\lcd.c" 
+"C:\WorkSpace\TimeV\en6A\fan.c" 
 [WORKSPACE_FILE_STATES]
-"C:\WorkSpace\en6A\en6A\ad.c" 26 26 1168 343 0 1 
-"C:\WorkSpace\en6A\en6A\en6A.c" 0 0 1164 339 0 0 
-"C:\WorkSpace\en6A\en6A\fan.c" -8 -31 1340 538 1 2 
-"C:\WorkSpace\en6A\en6A\intprg.c" 104 104 1168 343 0 4 
-"C:\WorkSpace\en6A\en6A\iodefine.h" 78 78 1168 343 0 3 
-"C:\WorkSpace\en6A\en6A\lcd.c" 130 130 1168 343 0 5 
+"C:\WorkSpace\TimeV\en6A\fan.c" -8 -31 1340 538 1 0 
 [LOADED_PROJECTS]
 "en6A" 
 [END]
