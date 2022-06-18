@@ -1,9 +1,9 @@
 -cpu=300HN
 -lang=c
--object="C:\WorkSpace\en6A\en6A\Debug\dbsct.obj"
+-object="C:\WorkSpace\TimeV\en6A\Debug\dbsct.obj"
 -outcode=sjis
 -debug
 -nolist
 -chgincpath
-"C:\WorkSpace\en6A\en6A\dbsct.c"
+"C:\WorkSpace\TimeV\en6A\dbsct.c"
 -nologo
