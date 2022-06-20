@@ -10,7 +10,7 @@
 /***********************************************************************/
                   
 
-
+#include "led.h"
 #include "fan.h"
 #include "lcd.h"
 #include "ad.h"
@@ -26,7 +26,9 @@ void main(void)
 {
 	initFan();
     InitLcd();
-    initAD();	
+    initAD();
+	InitLED();
+	
 	while(1){
 		waitTimeMS(10);
 		getADVal();

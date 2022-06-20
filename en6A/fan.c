@@ -4,11 +4,11 @@
 #include "machine.h"
 
 const unsigned int g_fanPeriod=0xff;
-unsigned int g_fanLevel=0x00;
+unsigned int g_fanLevel=0xAA;
 
 void initFan(void)
 {
-    TV.TCRV0.BIT.CMIEA = 0;
+	TV.TCRV0.BIT.CMIEA = 0;
 	
 
 	TV.TCRV0.BIT.CCLR = 1;
@@ -20,7 +20,7 @@ void initFan(void)
 	TV.TCORA=g_fanPeriod;
 	TV.TCORB=g_fanLevel;
 	
-    TV.TCRV0.BIT.CMIEA = 1;
+	TV.TCRV0.BIT.CMIEA = 1;
 
 }
 
@@ -40,8 +40,18 @@ unsigned int getFanLevel(void)
 __interrupt(vect=22) void INT_TimerV(void) 
 {
 	if(TV.TCSRV.BIT.CMFA == 1){
-    	TV.TCSRV.BIT.CMFA = 0;
- 		
+		TV.TCSRV.BIT.CMFA = 0;
+
+    	IO.PDR8.BIT.B1 = 0;
+		
+		TV.TCORA=g_fanPeriod;
+		TV.TCORB=g_fanLevel;
+	}
+	if(TV.TCSRV.BIT.CMFB == 1){
+		TV.TCSRV.BIT.CMFA = 0;
+		
+    	IO.PDR8.BIT.B1 = 1;
+		
 		TV.TCORA=g_fanPeriod;
 		TV.TCORB=g_fanLevel;
 	}
