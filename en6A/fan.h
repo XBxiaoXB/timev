@@ -6,5 +6,7 @@ void initFan(void);
 void setFanLevel(unsigned int level);
 unsigned int getFanLevel(void);
 
+extern unsigned int i;
+
 
 #endif
